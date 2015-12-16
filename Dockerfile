@@ -13,6 +13,8 @@ RUN echo "\ndaemon off;" >> /etc/nginx/nginx.conf
 COPY config/vhost.conf /etc/nginx/sites-enabled/default
 COPY entrypoint.sh /root/entrypoint.sh
 
+RUN chmod +x /root/entrypoint.sh
+
 VOLUME ["/var/www", "/var/log/nginx/"]
 
 EXPOSE 80
