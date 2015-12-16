@@ -17,6 +17,7 @@ if [ -z "$1" ];
     rm -rf app/cache/*
     php app/console assets:install --symlink web/
     php app/console cache:clear
+    php	app/console cache:clear -env=prod
 #    php app/console c:w
     service php5-fpm start
     nginx
