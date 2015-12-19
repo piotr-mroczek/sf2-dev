@@ -13,7 +13,6 @@ sudo setfacl -dR -m u:"$HTTPDUSER":rwX -m u:`whoami`:rwX app/cache app/logs
 
 sudo chmod 777 -R app/cache
 sudo chmod 777 -R app/logs
-sudo chmod 777 -R web/uploads
 
 
 if [ -z "$1" ];
