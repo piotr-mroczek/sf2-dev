@@ -7,6 +7,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 RUN apt-get install -y php5-mysql
 RUN apt-get install -y php-apc
 RUN apt-get install -y php5-intl
+RUN apt-get install -y php5-gd
 
 
 RUN echo "\ndaemon off;" >> /etc/nginx/nginx.conf
